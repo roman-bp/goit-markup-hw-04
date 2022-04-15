@@ -18,7 +18,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
-    <title>HW2</title>
+    <title>portfolio</title>
 </head>
 
 <body>
@@ -39,11 +39,21 @@
                 </ul>
             </nav>
             <ul class="header-addres">
-                <li class="item"><a href="mailto:info@devstudio.com"
-                        class="header-fonts header-addres-text link">info@devstudio.com</a>
+                <li class="adr-item item">
+                    <a href="mailto:info@devstudio.com" class="header-fonts header-addres-text link">
+                        <svg class="adr-icon">
+                            <use href="./images/icons/symbol-defs.svg#icon-envelope" width="16px" height="22px">
+                            </use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+
                 </li>
-                <li class="item"><a href="tel:+380961111111" class="header-fonts header-addres-text link">+38 096 111 11
-                        11</a></li>
+                <li class="adr-item item"><a href="tel:+380961111111" class="header-fonts header-addres-text link">
+                        <svg class="adr-icon">
+                            <use href="./images/icons/symbol-defs.svg#icon-telephone" width="10px" height="20px">
+                            </use>
+                        </svg>+38 096 111 11 11</a></li>
 
 
             </ul>
@@ -52,11 +62,6 @@
     </header>
     <!--MAIN-->
     <main>
-
-
-
-
-
 
         <section class="section">
             <div class="container">
@@ -147,26 +152,63 @@
     </main>
     <footer class="fter">
         <div class="container f-nav">
-            <a href="index.html" class="footer-logo link">
-                <span class="logo-color"> Web</span><span class="">Studio</span>
-            </a>
-            <address class="b-nav">
-                <ul class="ftr">
-                    <li class="item"><a
-                            href="https://www.google.com/maps/d/embed?mid=1ha2ieTyIqRlce1c0PHE3r7fh1XY&ehbc=2E312F"
-                            target="_blank" class=" foot-fonts footer-map link">г. Киев, пр-т Леси Украинки, 26</a>
+            <div class="f-left">
+                <a href="index.html" class="footer-logo link">
+                    <span class="logo-color"> Web</span><span class="">Studio</span>
+                </a>
+                <address class="b-nav">
+                    <ul class="ftr">
+                        <li class="item"><a
+                                href="https://www.google.com/maps/d/embed?mid=1ha2ieTyIqRlce1c0PHE3r7fh1XY&ehbc=2E312F"
+                                target="_blank" class=" foot-fonts footer-map link">г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="item"> <a href="mailto:info@example.com"
+                                class=" foot-fonts footer-addres link">info@example.com</a>
+                        </li>
+                        <li class="item"><a href="tel:+380961111111" class=" foot-fonts footer-addres link">+38 096 111
+                                11
+                                11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-social-link">
+                <p class="foot-fonts-social">Присоединяйтесь</p>
+                <ul class="soc-cont-list f-social">
+                    <li class="soc-cont-item">
+                        <a href="" class="soc-cont-link">
+                            <svg class="comand-soc-icon" width="20px" heigth="20px">
+                                <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+                            </svg></a>
                     </li>
-                    <li class="item"> <a href="mailto:info@example.com"
-                            class=" foot-fonts footer-addres link">info@example.com</a>
+                    <li class="soc-cont-item">
+                        <a href="" class="soc-cont-link">
+                            <svg class="comand-soc-icon" width="20px" heigth="20px">
+                                <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+                            </svg></a>
                     </li>
-                    <li class="item"><a href="tel:+380961111111" class=" foot-fonts footer-addres link">+38 096 111 11
-                            11</a></li>
+                    <li class="soc-cont-item">
+                        <a href="" class="soc-cont-link">
+                            <svg class="comand-soc-icon" width="20px" heigth="20px">
+                                <use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+                            </svg></a>
+                    </li>
+                    <li class="soc-cont-item">
+                        <a href="" class="soc-cont-link">
+                            <svg class="comand-soc-icon" width="20px" heigth="20px">
+                                <use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+                            </svg></a>
+                    </li>
+
                 </ul>
 
 
-            </address>
+            </div>
+
         </div>
+
+
     </footer>
+
 
 
 </body>
