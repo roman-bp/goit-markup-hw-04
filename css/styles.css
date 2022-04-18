@@ -118,9 +118,7 @@ img {
 
 .adr-icon {
     display: flex;
-
-
-    height: 17px;
+    height: 16px;
     width: 16px;
     margin-right: 10px;
     justify-content: center;
@@ -128,13 +126,11 @@ img {
 
 }
 
-.adr-icon.env {
-    padding-top: 2px;
-}
 
-.header-addres:hover,
-.header-addres: :focus {
-    fill: :ver(--acent-color);
+.hhov:hover,
+.hhov:focus {
+    color: var(--accent-color);
+
 }
 
 .header-logo {
@@ -188,6 +184,18 @@ img {
 .header-addres-text:focus,
 .current {
     color: var(--accent-color);
+
+}
+
+/* .adr-icon:focus {
+    fill: var(--accent-color);
+
+} */
+
+
+.header-addres-text:hover .adr-icon,
+.header-addres-text:focus .adr-icon {
+    fill: var(--accent-color);
 }
 
 .adr-item {
@@ -196,10 +204,10 @@ img {
     justify-content: center;
 }
 
-.adr-item:hover,
+/* .adr-item:hover,
 .adr-item:focus {
     fill: var(--accent-color);
-}
+} */
 
 
 /*--------------------------------HERO--------------------------------------*/
@@ -249,6 +257,7 @@ img {
 .btn:hover,
 .btn:focus {
     background-color: var(--btn-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn-text {
@@ -270,6 +279,7 @@ img {
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
 }
 
 .about-icon {
@@ -400,8 +410,7 @@ img {
 .soc-cont-link:hover,
 .soc-cont-link:focus {
     background-color: var(--accent-color);
-
-
+    fill: var(--accent-color)
 }
 
 .comand-soc-icon {
@@ -414,7 +423,8 @@ img {
     margin-left: 10px;
 }
 
-.soc-cont-link:hover .comand-soc-icon {
+.soc-cont-link:hover .comand-soc-icon,
+.soc-cont-link:focus .comand-soc-icon {
     fill: var(--first-bgc);
 
 }
@@ -447,7 +457,7 @@ img {
     width: 170px;
     padding: 16px 0;
     border: 1px solid #AFB1B8;
-
+    fill: #AFB1B8;
 }
 
 .client-list-icon {
@@ -457,22 +467,36 @@ img {
 
 }
 
-/* 
-.client-list-icon:hover,
-.client-list-icon:focus {
-    fill: var(--accent-color);
-} */
 
-.container-client-logo:hover .client-list-icon,
-.container-client-logo:focus .client-list-icon {
-    cursor: pointer;
+
+/* .client-list-icon:focus {
     fill: var(--accent-color);
+
+} */
+.client-list-link {
+    display: block;
+}
+
+.client-list-link:focus .client-list-icon {
+
+    fill: var(--accent-color);
+
+}
+
+.client-list-link:focus .container-client-logo {
+    border: 1px solid #2196F3
 }
 
 .container-client-logo:hover,
 .container-client-logo:focus {
     cursor: pointer;
     border: 1px solid #2196F3;
+}
+
+.container-client-logo:hover .client-list-icon,
+.container-client-logo:focus .client-list-icon {
+
+    fill: var(--accent-color);
 }
 
 /*------------------------------------footer-------------------------*/
@@ -611,6 +635,14 @@ img {
     padding: 24px 20px;
 }
 
+.port-hover:hover,
+.port-hover:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
 .portf-list .item:not(:nth-child(3n)) {
     margin-right: 30px;
 
@@ -645,7 +677,5 @@ img {
 
 .portf-list .item:hover {
     cursor: pointer;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
