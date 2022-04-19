@@ -423,13 +423,17 @@ img {
     fill: #AFB1B8;
 }
 
+.comand-soc-icon.foot {
+    fill: var(--first-bgc);
+}
+
 .soc-cont-item+.soc-cont-item {
     margin-left: 10px;
 }
 
 .soc-cont-link:hover .comand-soc-icon,
 .soc-cont-link:focus .comand-soc-icon {
-    fill: var(--first-bgc);
+    fill: var(--btn-text-color);
 
 }
 
@@ -549,7 +553,7 @@ img {
 .foot-fonts-social {
     margin-top: 12px;
     margin-bottom: 20px;
-    color: var(--hero-title-color);
+    /* color: var(--hero-title-color); */
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -564,6 +568,7 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    fill: var(--first-bgc);
 
 }
 
