@@ -467,6 +467,7 @@ img {
 
 .container-client-logo {
     width: 170px;
+    height: 92px;
     padding: 16px 0;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -486,8 +487,26 @@ img {
     fill: var(--accent-color);
 
 } */
+.client-list-item {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 .client-list-link {
-    display: block;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
 .client-list-link:focus .client-list-icon {
