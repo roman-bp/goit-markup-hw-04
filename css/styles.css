@@ -484,7 +484,7 @@ img {
 
 .client-list-link:focus .client-list-icon {
 
-    fill: currentColor;
+    fill: var(--accent-color);
 
 }
 
