@@ -93,7 +93,9 @@ img {
 
 .h-nav {
     display: flex;
-    align-items: center
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .b-nav {
@@ -163,8 +165,8 @@ img {
 }
 
 .header-nav-text {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
     color: var(--first-header-color);
 }
 
@@ -177,8 +179,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
     color: var(--second-header-color);
 }
 
@@ -223,7 +225,9 @@ img {
     padding-bottom: 200px;
 
     background-image:
-        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
         url(../images/hero-image.jpg);
     max-width: 1600px;
     background-repeat: no-repeat;
