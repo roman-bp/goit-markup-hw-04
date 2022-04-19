@@ -118,7 +118,7 @@ img {
 
 .adr-icon {
     display: flex;
-    height: 16px;
+    height: 12px;
     width: 16px;
     margin-right: 10px;
     justify-content: center;
@@ -126,6 +126,10 @@ img {
 
 }
 
+.adr-icon.tel {
+    width: 10px;
+    height: 16px;
+}
 
 .hhov:hover,
 .hhov:focus {
@@ -172,7 +176,7 @@ img {
 .header-addres-text {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--second-header-color);
@@ -195,7 +199,7 @@ img {
 
 .header-addres-text:hover .adr-icon,
 .header-addres-text:focus .adr-icon {
-    fill: var(--accent-color);
+    fill: currentColor;
 }
 
 .adr-item {
@@ -410,7 +414,7 @@ img {
 .soc-cont-link:hover,
 .soc-cont-link:focus {
     background-color: var(--accent-color);
-    fill: var(--accent-color)
+    fill: currentColor;
 }
 
 .comand-soc-icon {
@@ -432,6 +436,7 @@ img {
 .comand-li {
     background: var(--first-bgc);
     box-shadow:
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25),
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -457,6 +462,7 @@ img {
     width: 170px;
     padding: 16px 0;
     border: 1px solid #AFB1B8;
+    border-radius: 4px;
     fill: #AFB1B8;
 }
 
@@ -479,7 +485,7 @@ img {
 
 .client-list-link:focus .client-list-icon {
 
-    fill: var(--accent-color);
+    fill: currentColor;
 
 }
 
@@ -619,6 +625,7 @@ img {
 
 }
 
+
 /*-----------------------------portf-work-section----------------------------*/
 
 
@@ -635,9 +642,10 @@ img {
     padding: 24px 20px;
 }
 
-.port-hover:hover,
-.port-hover:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+.port-fon:focus,
+.port-hover:hover {
+    box-shadow:
+        0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 
