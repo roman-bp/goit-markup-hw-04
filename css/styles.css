@@ -650,8 +650,12 @@ img {
     padding: 24px 20px;
 }
 
-.port-fon:focus,
-.port-hover:hover {
+.pcard {
+    display: inline-block;
+}
+
+.pcard:focus,
+.pcard:hover {
     box-shadow:
         0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
