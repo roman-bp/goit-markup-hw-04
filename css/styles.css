@@ -119,6 +119,7 @@ img {
 }
 
 .adr-icon {
+    color: var(--text-color);
     display: flex;
     height: 12px;
     width: 16px;
@@ -128,7 +129,11 @@ img {
 
 }
 
+
+
+
 .adr-icon.tel {
+    color: var(--text-color);
     width: 10px;
     height: 16px;
 }
@@ -165,8 +170,7 @@ img {
 }
 
 .header-nav-text {
-    /* padding-top: 32px;
-    padding-bottom: 32px; */
+
     color: var(--first-header-color);
 }
 
@@ -179,9 +183,12 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-top: 32px;
-    padding-bottom: 32px; */
+
     color: var(--second-header-color);
+}
+
+.adr-icon {
+    fill: currentColor;
 }
 
 .header-nav-text:hover,
@@ -193,15 +200,12 @@ img {
 
 }
 
-/* .adr-icon:focus {
-    fill: var(--accent-color);
 
-} */
 
 
 .header-addres-text:hover .adr-icon,
 .header-addres-text:focus .adr-icon {
-    fill: currentColor;
+    fill: var(--accent-color);
 }
 
 .adr-item {
@@ -397,7 +401,7 @@ img {
     margin-top: 0;
     margin-bottom: 0;
     color: var(--text-color);
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .soc-cont-list {
@@ -461,20 +465,19 @@ img {
 
 }
 
+.client-list-item {
+    width: 170px;
+    height: 92px;
+}
+
+
 .client-list-item+.client-list-item {
     margin-left: 30px;
 }
 
-.container-client-logo {
-    width: 170px;
-    height: 92px;
-    padding: 16px 0;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    fill: #AFB1B8;
-}
 
 .client-list-icon {
+
     fill: #AFB1B8;
     width: 106px;
     height: 60px;
@@ -482,36 +485,33 @@ img {
 }
 
 
-
-/* .client-list-icon:focus {
-    fill: var(--accent-color);
-
-} */
 .client-list-link {
-    display: inline-flex;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
+
+.client-list-link:hover,
+
+.client-list-link:focus {
+    border: 1px solid var(--accent-color);
+
+}
+
+.client-list-link:hover .client-list-icon,
 
 .client-list-link:focus .client-list-icon {
-
-    fill: var(--accent-color);
-
-}
-
-.client-list-link:focus .container-client-logo {
-    border: 1px solid #2196F3
-}
-
-.container-client-logo:hover,
-.container-client-logo:focus {
-    cursor: pointer;
-    border: 1px solid #2196F3;
-}
-
-.container-client-logo:hover .client-list-icon,
-.container-client-logo:focus .client-list-icon {
-
     fill: var(--accent-color);
 }
+
+
+
+
 
 /*------------------------------------footer-------------------------*/
 .fter {
@@ -521,6 +521,7 @@ img {
 
 .f-nav {
     display: flex;
+    align-items: baseline;
 }
 
 .f-left {
@@ -556,7 +557,6 @@ img {
 }
 
 .foot-fonts-social {
-    margin-top: 12px;
     margin-bottom: 20px;
     color: var(--hero-title-color);
     font-weight: 700;
